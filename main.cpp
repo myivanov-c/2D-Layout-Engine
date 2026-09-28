@@ -108,3 +108,21 @@ int	main() {
 
 	return 0;
 }
+
+
+Point	closestPoint(const Rectangle &rec, const Circle &circ) {
+
+	double best;
+	double current;
+
+	current = rec.getPosition().distanceTo(circ.getCenter());
+
+	
+
+
+
+}
+
+void	intersectsRC(const Rectangle &rec, const Circle &circ) {
+
+}
