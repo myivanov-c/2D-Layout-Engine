@@ -2,7 +2,7 @@
 
 Point::Point() : x(0), y(0) {}
 
-Point::Point(int Xcrd, int Ycrd) : x(Xcrd), y(Ycrd) {}
+Point::Point(double Xcrd, double Ycrd) : x(Xcrd), y(Ycrd) {}
 
 Point::Point(const Point &obj) : x(obj.x), y(obj.y) {}
 
@@ -14,22 +14,27 @@ Point& Point::operator=(const Point &obj) {
 	return *this;
 }
 
+bool	Point::operator==(const Point &obj) const
+{
+	return (x == obj.x && y == obj.y);
+}
+
 Point::~Point() {}
 
 
-int	Point::getX() const {
+double	Point::getX() const {
 	return x;
 }
 
-int	Point::getY() const {
+double	Point::getY() const {
 	return y;
 }
 
 
-void Point::setX(int newX) {
+void Point::setX(double newX) {
 	x = newX;
 }
 
-void	Point::setY(int newY) {
+void	Point::setY(double newY) {
 	y = newY;
 }

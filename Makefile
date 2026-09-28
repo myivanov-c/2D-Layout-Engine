@@ -1,12 +1,13 @@
 NAME = layout
 
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror
 
 RM = rm -f
 
 SRCS = main.cpp \
-		src/Point.cpp
+		src/Point.cpp \
+		src/Rectangle.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 all: $(NAME)

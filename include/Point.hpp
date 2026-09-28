@@ -5,20 +5,21 @@
 
 
 class Point {
-		int x;
-		int	y;
+		double x;
+		double	y;
 	public:
 		Point();
-		Point(int Xcrd, int Ycrd);
+		Point(double Xcrd, double Ycrd);
 		Point(const Point &obj);
 		Point& operator=(const Point &obj);
+		bool	operator==(const Point &obj) const;
 		~Point();
 
-		int		getX() const;
-		int		getY() const;
+		double		getX() const;
+		double		getY() const;
 
-		void	setX(int newX);
-		void	setY(int newY);
+		void	setX(double newX);
+		void	setY(double newY);
 };
 
 
