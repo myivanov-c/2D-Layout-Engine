@@ -38,3 +38,11 @@ void Point::setX(double newX) {
 void	Point::setY(double newY) {
 	y = newY;
 }
+
+double	Point::distanceTo(const Point &obj) const {
+
+	double dx = obj.getX() - x;
+	double dy = obj.getY() - y;
+
+	return std::sqrt((dx * dx) + (dy * dy));
+}

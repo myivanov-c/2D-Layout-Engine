@@ -20,6 +20,8 @@ class Point {
 
 		void	setX(double newX);
 		void	setY(double newY);
+
+		double distanceTo(const Point &obj) const;
 };
 
 

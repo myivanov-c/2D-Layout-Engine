@@ -2,6 +2,7 @@
 # define RECTANGLE_HPP
 
 # include "Point.hpp"
+# include <cmath>
 
 
 class Rectangle {

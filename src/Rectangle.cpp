@@ -88,10 +88,3 @@ bool	Rectangle::intersects(const Rectangle &obj) const {
 
 	return true;
 }
-
-
-
-
-
-
-

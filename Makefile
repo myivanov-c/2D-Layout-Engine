@@ -7,7 +7,8 @@ RM = rm -f
 
 SRCS = main.cpp \
 		src/Point.cpp \
-		src/Rectangle.cpp
+		src/Rectangle.cpp \
+		src/Circle.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 all: $(NAME)
